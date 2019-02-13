@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 import { Readable } from "stream";
 
-const NOOP = () => {};
+const NOOP = () => { };
 
 function removePortFromAddress(address) {
   return address
@@ -20,8 +20,8 @@ function createConnectionObject(context) {
   const xForwardedFor = req.headers ? req.headers["x-forwarded-for"] : undefined;
 
   return {
-    encrypted     : req.originalUrl && req.originalUrl.toLowerCase().startsWith("https"),
-    remoteAddress : removePortFromAddress(xForwardedFor)
+    encrypted: req.originalUrl && req.originalUrl.toLowerCase().startsWith("https"),
+    remoteAddress: removePortFromAddress(xForwardedFor)
   };
 }
 
@@ -43,7 +43,6 @@ function sanitizeContext(context) {
   // We don't want the developper to mess up express flow
   // See https://github.com/yvele/azure-function-express/pull/12#issuecomment-336733540
   delete sanitizedContext.done;
-
   return sanitizedContext;
 }
 
@@ -74,6 +73,7 @@ export default class IncomingMessage extends Readable {
     this.connection = createConnectionObject(context);
 
     this.context = sanitizeContext(context); // Specific to Azure Function
+    //this.context = Object.assign(context)
   }
 
 }
