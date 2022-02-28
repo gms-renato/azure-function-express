@@ -28,7 +28,8 @@
     "email": "merlicco@gmail.com"
   },
   "contributors": [
-    "Yves Merlicco <merlicco@gmail.com>"
+    "Yves Merlicco <merlicco@gmail.com>",
+    "Alan Christensen <alan@christensen.org.nz>"
   ],
   "scripts": {
     "bootstrap": "npm install",
