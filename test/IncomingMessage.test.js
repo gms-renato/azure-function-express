@@ -16,8 +16,7 @@ describe("IncomingMessage", () => {
           originalUrl : "https://foo.com/bar",
           headers     : { "x-forwarded-for": "192.168.0.1:57996" }
         }
-      },
-      log,
+      }
     };
 
     const req = new IncomingMessage(context);
@@ -40,8 +39,7 @@ describe("IncomingMessage", () => {
         req : {
           originalUrl : "http://foo.com/bar"
         }
-      },
-      log,
+      }
     };
 
     const req = new IncomingMessage(context);
@@ -67,7 +65,6 @@ describe("IncomingMessage", () => {
           originalUrl : "http://foo.com/bar"
         }
       },
-      log,
       done  : () => {}
     };
 
@@ -88,11 +85,6 @@ describe("IncomingMessage", () => {
     expect(req.context.invocationId).toBe(context.invocationId);
     expect(req.context.bindingData).toBe(context.bindingData);
     expect(req.context.bindings).toBe(context.bindings);
-    expect(req.context.log).toBeInstanceOf(Function);
-    expect(req.context.log.info).toBeInstanceOf(Function);
-    expect(req.context.log.warn).toBeInstanceOf(Function);
-    expect(req.context.log.error).toBeInstanceOf(Function);
-    expect(req.context.log.verbose).toBeInstanceOf(Function);
     expect(req.context.done).toBeUndefined(); // We don't want to pass done
   });
 
