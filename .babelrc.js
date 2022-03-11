@@ -3,8 +3,9 @@ module.exports = {
     "@babel/preset-env", {
       loose : true,
       useBuiltIns : "entry",
+      corejs: "3.0",
       targets : {
-        node : "6.11" // Minimum supported version
+        node : "8" // Minimum supported version
       }
     }
   ]],
