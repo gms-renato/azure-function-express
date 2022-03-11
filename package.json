@@ -10,26 +10,27 @@
     "azure",
     "koa"
   ],
-  "homepage": "https://github.com/yvele/azure-function-express",
+  "homepage": "https://github.com/bittrance/azure-function-express",
   "bugs": {
-    "url": "https://github.com/yvele/azure-function-express/issues"
+    "url": "https://github.com/bittrance/azure-function-express/issues"
   },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yvele/azure-function-express"
+    "url": "https://github.com/bittrance/azure-function-express"
   },
   "files": [
     "lib/"
   ],
   "main": "lib/index.js",
   "author": {
-    "name": "Merlicco Yves",
-    "email": "merlicco@gmail.com"
+    "name": "Bittrance",
+    "email": "bittrance@gmail.com"
   },
   "contributors": [
     "Yves Merlicco <merlicco@gmail.com>",
-    "Alan Christensen <alan@christensen.org.nz>"
+    "Alan Christensen <alan@christensen.org.nz>",
+    "Bittrance <bittrance@gmail.com>"
   ],
   "scripts": {
     "bootstrap": "npm install",
