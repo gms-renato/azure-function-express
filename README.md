@@ -1,27 +1,18 @@
-<a href="https://hapticmedia.fr/en/">
-  <img align="right" alt="Supported by Hapticmedia" src="docs/media/hapticmedia-support.svg" title="Supported by Hapticmedia" height="60"/>
-</a>
-
-
 # azure-function-express
 
 <a href="https://azure.microsoft.com/en-us/services/functions/">
   <img align="right" alt="Function logo" src="docs/media/function.png" title="Function" width="150"/>
 </a>
 
-> Allows Express usage with Azure Function
-
-[![npm version](https://img.shields.io/npm/v/azure-function-express.svg)](https://www.npmjs.com/package/azure-function-express)
+[![npm version](https://img.shields.io/npm/v/@bittrance/azure-function-express.svg)](https://www.npmjs.com/package/azure-function-express)
 ![Node](https://img.shields.io/badge/node-v8-blue.svg)
-![Node](https://img.shields.io/badge/node-v10-blue.svg)
-[![Travis Status](https://img.shields.io/travis/yvele/azure-function-express/master.svg?label=travis)](https://travis-ci.org/yvele/azure-function-express)
-[![Coverage Status](https://img.shields.io/codecov/c/github/yvele/azure-function-express/master.svg)](https://codecov.io/github/yvele/azure-function-express)
-[![MIT licensed](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+![Node](https://img.shields.io/badge/node-v16-blue.svg)
+[![.github/workflows/verify.yaml](https://github.com/bittrance/azure-function-express/actions/workflows/verify.yaml/badge.svg)](https://github.com/bittrance/azure-function-express/actions/workflows/verify.yaml)
+[![Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
+Connect your [Express](https://expressjs.com) application to an [Azure Function handler](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node), and make seamless usage of [all middlewares](http://expressjs.com/en/guide/using-middleware.html) you are already familiar with.
 
-## Description
-
-[Connect](https://github.com/senchalabs/connect) your [Express](https://expressjs.com) application to an [Azure Function handler](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node), and make seamless usage of [all middlewares](http://expressjs.com/en/guide/using-middleware.html) you are already familiar with.
+This is a fork of [azure-fuction-express](https://github.com/yvele/azure-function-express) which appears to be abandoned.
 
 
 ## Usage
@@ -102,14 +93,12 @@ app.get("/api/hello-world", (req, res) => {
 
 ## Runtime compatibility
 
-Supported Node version are:
- - Node 6.11.2 ([first node version supported by Azure Functions](https://github.com/Azure/azure-webjobs-sdk-script/issues/2036#issuecomment-336942961))
- - Node 8 (LTS)
- - Node 10
+Supported Node version are Node 8 through to 16.
 
-Azure Functions runtime v1 and v2 beta are both supported.
+Azure Functions runtime v1 (with Node 8), v2 and v3 are supported. v4 is currently untested.
 
 
 ## License
 
-[Apache 2.0](LICENSE) © Yves Merlicco
+- [Apache 2.0](LICENSE) © Bittrance
+- [Apache 2.0](LICENSE) © Yves Merlicco

@@ -1,6 +1,6 @@
 {
-  "name": "azure-function-express",
-  "version": "2.0.0",
+  "name": "@bittrance/azure-function-express",
+  "version": "2.1.0",
   "sideEffects": false,
   "description": "Allows Express usage with Azure Function",
   "keywords": [
@@ -39,7 +39,7 @@
     "clean:build": "rm -rf lib",
     "clean:npm": "rm -rf node_modules",
     "coverage": "jest --coverage",
-    "publish": "npm run validate && npm run build && npm publish",
+    "publish": "npm run validate && npm run build && npm publish --access public",
     "style": "eslint src/**",
     "test": "jest",
     "validate": "npm run style && npm run coverage"
