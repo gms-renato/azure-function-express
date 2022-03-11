@@ -33,8 +33,5 @@ module.exports = {
 
     // Disallow multiple spaces
     "no-multi-spaces" : ["error", { ignoreEOLComments: true }],
-
-    // Require or disallow padding within blocks
-    "padded-blocks": ["error", { classes: "always" }]
   }
 };

@@ -53,7 +53,6 @@ function sanitizeContext(context) {
  * @private
  */
 export default class IncomingMessage extends Readable {
-
   /**
    * Note: IncomingMessage assumes that all HTTP in is binded to "req" property
    *
@@ -75,5 +74,4 @@ export default class IncomingMessage extends Readable {
 
     this.context = sanitizeContext(context); // Specific to Azure Function
   }
-
 }
