@@ -1,6 +1,6 @@
 {
-  "name": "@bittrance/azure-function-express",
-  "version": "2.1.0",
+  "name": "@morning-bird/azure-function-express",
+  "version": "2.1.1",
   "sideEffects": false,
   "description": "Allows Express usage with Azure Function",
   "keywords": [
@@ -10,22 +10,22 @@
     "azure",
     "koa"
   ],
-  "homepage": "https://github.com/bittrance/azure-function-express",
+  "homepage": "https://github.com/gms-renato/azure-function-express",
   "bugs": {
-    "url": "https://github.com/bittrance/azure-function-express/issues"
+    "url": "https://github.com/gms-renato/azure-function-express/issues"
   },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bittrance/azure-function-express"
+    "url": "https://github.com/gms-renato/azure-function-express"
   },
   "files": [
     "lib/"
   ],
   "main": "lib/index.js",
   "author": {
-    "name": "Bittrance",
-    "email": "bittrance@gmail.com"
+    "name": "Renato",
+    "email": "renato.budiman07@gmail.com"
   },
   "contributors": [
     "Yves Merlicco <merlicco@gmail.com>",
@@ -45,7 +45,7 @@
     "validate": "npm run style && npm run coverage"
   },
   "engines": {
-    "node": ">=8 <=16",
+    "node": ">=16 <=20",
     "npm": ">=6"
   },
   "devDependencies": {
